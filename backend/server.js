@@ -14,7 +14,10 @@ connectDB()
 connectCloudinary()
 
 app.use(express.json())
-const allowedOrigins = ['https://schedura-new.vercel.app'];
+const allowedOrigins = [
+  'https://schedura-new.vercel.app',
+  'https://schedura-admin.vercel.app'
+];
 
 app.use(cors({
   origin: allowedOrigins,
